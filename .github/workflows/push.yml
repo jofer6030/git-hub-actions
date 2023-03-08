@@ -19,5 +19,5 @@ jobs:
           fetch-depth: 0
 
       - name: Build the Docker image
-        run: docker build -t ${{IMAGE_NAME}}:1.0.0 .
+        run: docker build -t ${{env.IMAGE_NAME}}:1.0.0 .
 
