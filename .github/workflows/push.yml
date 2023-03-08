@@ -20,4 +20,7 @@ jobs:
 
       - name: Build the Docker image
         run: docker build -t ${{env.IMAGE_NAME}}:1.0.0 .
+      
+      - name: Check image build
+        run: docker image ls
 
